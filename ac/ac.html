@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Maintenance</title>
+    <link rel="stylesheet" href="./ac.css">
+</head>
+<body>
+    <form onsubmit="btnclick(event)">
+        <div>
+            <h1>AC Maintenance Service</h1>
+        </div>
+        <div id="maindiv">
+            <table>
+                <tr>
+                    <td><label for="name">Customer Name</label></td>
+                    <td><input type="text" placeholder="Enter your name" id="name"> </td>
+                </tr>
+                <tr>
+                    <td><label for="num">Mobile Number</label></td>
+                    <td><input type="text" placeholder="Enter your number" id="num"></td>
+                </tr>
+                <tr>
+                    <td><label for="addr">Address</label></td>
+                    <td><textarea name="" id="" cols="20" rows="5" id="addr"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="type">AC Type</label> </td>
+                    <td>
+                        <select id="type">
+                            <option>Window</option>
+                            <option>Split</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Service Type</label></td>
+                    <td>
+                        <input type="checkbox" id="cleaning" value="500">
+                        <label for="cleaning">Cleaning</label>
+                        <input type="checkbox" id="repair" value="500">
+                        <label for="repair">Repair</label>
+                        <input type="checkbox" id="gas" value="600"><label for="gas">Gas Refill</label> 
+                        <input type="checkbox" id="relocation" value="800"><label for="relocation">Relocation</label>
+                        <input type="checkbox" id="filter" value="500"><label for="filter"> Filter</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date for Appointment</label> </td>
+                    <td><input type="date" id="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="maintenance">Yearly Maintenance</label></td>
+                    <td><input type="checkbox" id="maintenance" value="500"><label for="maintenance">Select if required</label> </td>
+                </tr>
+            </table>
+            <div class="button"><button value="submit" type="submit">Submit</button>
+            <button value="reset" type="reset">Reset</button></td></div>
+            <p id="result"></p>
+            
+        </div>
+    </form>
+    <script src="./ac.js"></script>
+</body>
+</html>
